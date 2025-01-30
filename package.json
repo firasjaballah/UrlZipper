@@ -13,6 +13,7 @@
     "valid-url": "^1.0.9"
   },
   "scripts": {
+    "prestart": "npm install",
   "start": "node server.js",
   "build": "echo 'No build step required'"
 }
