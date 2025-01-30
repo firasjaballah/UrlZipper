@@ -60,6 +60,14 @@ exports.shortenUrl = async (req, res) => {
     }
 
     let shortId = customAlias || shortid.generate();
+    const count = await Url.countDocuments();
+if (count === 0) {
+    const sampleUrl = new Url({
+        longUrl: 'http://example.com',
+        shortId: 'sample123'
+    });
+    await sampleUrl.save();
+}
     if (customAlias) {
         const existingAlias = await Url.findOne({ customAlias });
         if (existingAlias) {
