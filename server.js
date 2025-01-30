@@ -11,7 +11,7 @@ const PORT = process.env.PORT || 8080;
 // CORS configuration
 app.use(
   cors({
-    origin: "https://url-zipper-front-6kip-60twgn14o-firasjaballahs-projects.vercel.app/*", // Frontend URL
+    origin: "https://url-zipper-front-6kip.vercel.app", // Frontend URL
     methods: "GET,POST,PUT,DELETE",
     allowedHeaders: "Content-Type",
   })
