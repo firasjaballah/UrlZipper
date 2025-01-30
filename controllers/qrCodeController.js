@@ -30,6 +30,7 @@
  *       500:
  *         description: Server error.
  */
+const QRCode= require('qrcode');
 exports.generateQRCode = async (shortUrl) => {
     try {
       const qrCode = await QRCode.toDataURL(shortUrl); // Generate QR code
