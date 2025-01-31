@@ -14,7 +14,12 @@
   },
   "scripts": {
     "prestart": "npm install",
-  "start": "node server.js",
-  "build": "echo 'No build step required'"
-}
+    "start": "node server.js",
+    "build": "echo 'No build step required'",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^7.0.0"
+  }
 }
