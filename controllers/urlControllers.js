@@ -4,7 +4,7 @@ const validUrl = require('valid-url');
 const generateQRCode = require('./qrCodeController').generateQRCode; 
 const { setAsync, getAsync } = require('../utils/redisHelper');
 
-const BASE_URL = process.env.BASE_URL || 'http://localhost:8080';
+const BASE_URL = process.env.BASE_URL || 'https://url-zipper-api.onrender.com';
 
 /**
  * @swagger
