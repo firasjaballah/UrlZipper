@@ -120,10 +120,10 @@ if (count === 0) {
 exports.redirectUrl = async (req, res) => {
     const { shortId } = req.params;
 
-    let cachedUrl = await getAsync(shortId);
-    if (cachedUrl) {
-        return res.redirect(cachedUrl);
-    }
+    // let cachedUrl = await getAsync(shortId);
+    // if (cachedUrl) {
+    //     return res.redirect(cachedUrl);
+    // }
 
     try {
         const url = await Url.findOne({ shortId });
